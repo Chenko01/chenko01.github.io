@@ -74,9 +74,6 @@
         <h1>¡Feliz Aniversario, Mi Amor!</h1>
         <p>Introduce nuestra fecha especial, prueba de amor:</p>
         <input type="date" id="dateInput" placeholder="AAAA-MM-DD">
-        <br>
-        <br>
-        <br>
         <div id="message"></div>
         <div class="gallery hidden" id="multiplePhotos">
             <img src="foto1.jpg" alt="Foto 1">
@@ -99,11 +96,11 @@
             if (inputDate === specialDate) {
                 multiplePhotos.classList.remove('hidden');
                 singlePhoto.classList.add('hidden');
-                message.textContent = '¡Bieeeeen me quieres!, como recompensa unos momentos bonitos juntos:';
+                message.textContent = '\n¡Bieeeeen me quieres!, como recompensa unos momentos bonitos juntos:';
             } else {
                 multiplePhotos.classList.add('hidden');
                 singlePhoto.classList.remove('hidden');
-                message.textContent = 'Esta no es la fecha especial, ya no me quieres :(';
+                message.textContent = '\nEsta no es la fecha especial, ya no me quieres :(';
             }
         });
     </script>
