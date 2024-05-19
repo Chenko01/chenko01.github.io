@@ -91,16 +91,16 @@
             const specialDate = '2020-06-30'; // Cambia esta fecha a la que quieras verificar
             const multiplePhotos = document.getElementById('multiplePhotos');
             const singlePhoto = document.getElementById('singlePhoto');
-            const message = document.getElementById('message');
+            const message = document.getElementById('\n message');
 
             if (inputDate === specialDate) {
                 multiplePhotos.classList.remove('hidden');
                 singlePhoto.classList.add('hidden');
-                message.textContent = '\n¡Bieeeeen me quieres!, como recompensa unos momentos bonitos juntos:';
+                message.textContent = '¡Bieeeeen me quieres!, como recompensa unos momentos bonitos juntos:';
             } else {
                 multiplePhotos.classList.add('hidden');
                 singlePhoto.classList.remove('hidden');
-                message.textContent = '\nEsta no es la fecha especial, ya no me quieres :(';
+                message.textContent = 'Esta no es la fecha especial, ya no me quieres :(';
             }
         });
     </script>
